@@ -1,0 +1,54 @@
+Algoritmos - Identificação do problema e Análise Crítica
+
+solicitação de calculo IMC
+
+solicitar peso em kg
+Se peso menor ou igual a 0 (
+    Solitar peso maior que 0
+)
+anotar peso em um caderno
+
+solicitar altura  em metros
+se altura menor ou igual a 0 (
+    Solicitar altura maior que 0
+)
+anotar altura em um caderno
+
+anotar no caderno o resultado de peso/(altura x altura)
+
+buscar no caderno a tabela de resultados
+
+se resultado for menor que 18.5 (
+    Falar que está abaixo do peso
+)
+
+se resultado maior ou igual a 18.5 && resultado menor ou igual a 24.9 (
+    Falar que está com o peso ideal
+)
+
+se resultado maior ou igual a 25 && resultado menor ou igual a 29.9 (
+    Falar que está com pré obesidade
+)
+
+se resultado maior ou igual a 30 && resultado menor ou igual a 34.9 (
+    Falar que está com obesidade grau 1
+)
+
+se resultado maior ou igual a 35 && resultado menor ou igual a 39.9 (
+    Falar que está com obesidade grau 2
+)
+
+se resultado maior ou igual a 40 (
+    Falar que está com obesidade grau 3
+)
+
+
+
+//IMC CLIENTE = 23
+//caderno
+//IMC menor que 18.5 - Abaixo do peso
+//IMC entre 18.5  e 24.9 - Peso ideal
+//IMC entre 25 e 29.9 - Pré-obesidade
+//IMC entre 30 e 34.9 - Obesidade grau 1
+//IMC entre 35 e 39.9 - Obesidade grau 2
+//IMC acima de 40 - Obesidade grau 3
