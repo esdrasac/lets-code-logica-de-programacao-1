@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <title>Aula 2</title>
+
+</head>
+<body>
+    <table width="300" cellspacing="4" cellpadding="8" border="0" bgcolor="#48D1CC">
+        <tr> 
+           <td><font color="#FFFFFF" face="arial, verdana, helvetica"> 
+        <b>Calculadora de IMC</b> 
+           </font></td> 
+        </tr>
+        <tr> 
+           <td bgcolor="#ffffcc"> 
+           <font face="arial, verdana, helvetica"> 
+            <body>
+                <div align="center">
+                    <form  name="form" id="form">
+                        Peso (em Kg)
+                        <br>
+                        <input type="Text" id="peso" size="15"> 
+                        <br>
+                        Altura (em Cm)
+                        <br>
+                        <input type="Text" id="alt" size="15"> 
+                        <br>
+                        <br>
+                        <button type="button" style="Padding: 8pt" onclick="calculoImcSrJoaquin()">Calcular IMC</button>
+                        <button type="reset" style="Padding: 8pt">Limpar valores</button>
+                        <br>
+                        <br>
+                        IMC
+                        <br>
+                        <input type="Text" readonly="true" id="massacor" size="15"> 
+                        <br>
+                        Avaliacao do IMC
+                        <br> 
+                        <input type="Text" name="comment" readonly id="comment" size="15">
+                        <br>
+                        <br>
+                        <center>
+                        <center>
+                    </form>
+                </div>
+            </body>
+           </font> 
+          </td> 
+        </tr>
+        </table>
+    </body>
+</html>
