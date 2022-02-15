@@ -1,0 +1,45 @@
+Uma empresa de transportes pretende automatizar a gestão de frota de seus veiculos, e querem automatizar um processo de preenchimento de checklists, hoje esse processo é feito manualmente, e contém os seguintes passos:
+* O motorista chega na empresa
+* Pega o checklist com o lider
+* Verifica o carro 
+* Preenche o checklist
+* Leva o checklist preenchido ao lider
+* Validar o checklist
+* Pegar autorização
+* Pegar o carro
+* Ir a portaria
+* Apresentar a autorização
+
+
+Criar um pequeno algoritimo que automatize e que perminte que seja preenchido um checklist com os seguintes campos:
+
+* Placa do carro
+* Modelo
+* ano
+* Km
+* Nome do motorista
+* Matricula do motorista
+* Estado dos Pneus      - OK/Não OK
+* Lataria do carro      - OK/Não OK
+* Farois                - OK/Não OK
+* Nivel de combustível  - OK/Não OK  
+
+
+Sendo os seguintes campos obrigatórios
+    * Placa do carro
+    * Km
+    * Nome do motorista
+    * Matricula do motorista
+
+As restrições do sistema são as seguintes:
+    * O pneu deve estar bom para sair da empresa
+    * Os farois devem estar bons para sair da empresa
+    * O lider precisa ser acionado por qualquer não conformidade do veícluo
+
+
+Obs: 
+1. Existe um sistema q dispara SMS para o lider (Assuma que a funcionalidade já foi desenvolvida), sempre que necessário, invoque a seguinte função:
+    AcionarLider.SMS()
+
+2. Existe outro sistema ligado a portaria (Assuma que a funcionalidade já foi desenvolvida), sempre que necessário, invoque a seguinte função:
+    Portaria.autorizar()

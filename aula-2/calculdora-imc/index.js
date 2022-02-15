@@ -12,7 +12,6 @@
  *  
  */
 
-
  function calculoImcSrJoaquin() {
     const peso = document.form.peso.value
     const altura = document.form.alt.value
