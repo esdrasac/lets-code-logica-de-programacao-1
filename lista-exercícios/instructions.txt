@@ -1,0 +1,6 @@
+Lista de Exercícios - Lógica de Programação
+
+* Leia com atenção todos os enunciados
+* Questões que precisam de pegar algum valor digitado pelo usuário utilize o html disponível na pasta de cada questão
+* A página HTML fica a critério, podendo ser utilizado um forms com os campos para os respectivos dados, ou simplesmente utilizando a função prompt('')
+* Não será avaliado o HTML/CSS
