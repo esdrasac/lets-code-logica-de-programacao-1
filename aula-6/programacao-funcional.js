@@ -17,7 +17,7 @@
  * Tudo que rodou antes da chamada da função, não pode ter influência no seu retorno
  * Funções Puras x Impuras
  * Modificações só podem ser feitas por funções
- * Sem loop's - Laços devem ser recursivos
+ * Evitar loop's - Laços devem ser recursivos
  * Programação declarativa (independente) - Deve ter pelo menos um argumento e retornar algo (valor, função e etc.)
  * 
  * 
@@ -55,6 +55,16 @@
  * const raio = function (pi, raio) {
  *      return pi * (raio * raio)
  * }
+ * 
+ * const retornaValorTotalProduto(valor) {
+ *      return Produto.margem * valor
+ * }
+ * 
+ * const retornaValorTotalProduto(valor, margem) {
+ *      return margem * valor
+ * }
+ * 
+ * 
  * Efeito Colateral
  * 
  * function calculaMedia(aluno) {

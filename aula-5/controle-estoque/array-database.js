@@ -134,6 +134,16 @@ const buscarVendaPorVendedor = function (vendedor) {
     return vendasDoVendedor
 }
 
+const buscarQuantidadeDeProdutos = function() {
+    return produtos.reduce((produtoAnterior, current, i, arr) =>  {
+        if(typeof produtoAnterior === 'object') {
+            return produtoAnterior.quantidade + current.quantidade
+        }
+        return produtoAnterior + current.quantidade
+    }
+   )
+}
+
 module.exports = {
     cadastrarProdutos,
     buscarProdutos,
@@ -144,5 +154,6 @@ module.exports = {
     cadastrarVenda,
     buscarVendas,
     buscarVendaPorId,
-    buscarVendaPorVendedor
+    buscarVendaPorVendedor,
+    buscarQuantidadeDeProdutos
 }

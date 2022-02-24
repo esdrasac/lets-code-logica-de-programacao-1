@@ -162,39 +162,41 @@ nossoDb.cadastrarProdutos({
 const produtosCadastrados = nossoDb.buscarProdutos()
 
 
-nossoDb.cadastrarVenda({
-        id: 10,
-        idProduto: 1,
-        vendendor: 'Aguilar',
-        quantidade: 4,
-        entrega: true,
-    })
+// nossoDb.cadastrarVenda({
+//         id: 10,
+//         idProduto: 1,
+//         vendendor: 'Aguilar',
+//         quantidade: 4,
+//         entrega: true,
+//     })
 
-nossoDb.cadastrarVenda({
-    id: 11,
-    idProduto: 3,
-    vendendor: 'Aguilar',
-    quantidade: 6,
-    entrega: true,
-})
+// nossoDb.cadastrarVenda({
+//     id: 11,
+//     idProduto: 3,
+//     vendendor: 'Aguilar',
+//     quantidade: 6,
+//     entrega: true,
+// })
 
-nossoDb.cadastrarVenda({
-    id: 12,
-    idProduto: 2,
-    vendendor: 'Flavius',
-    quantidade: 8,
-    entrega: true,
-})
+// nossoDb.cadastrarVenda({
+//     id: 12,
+//     idProduto: 2,
+//     vendendor: 'Flavius',
+//     quantidade: 8,
+//     entrega: true,
+// })
 
 const vendasRealizadas = nossoDb.buscarVendas()
 const produtosPosVendas = nossoDb.buscarProdutos()
-console.log(JSON.stringify({
-    ProdutosIniciais: produtosIniciais,
-    VendasIniciais: vendasIniciais,
-    ProdutosPosteriormenteCadastrados: produtosCadastrados,
-    QuantidadePosteriormenteCadastrados: produtosCadastrados.length,
-    VendasRealizadas: vendasRealizadas,
-    QuantidadeDeVendasRealizadas: vendasRealizadas.length,
-    ProdutosPosVendas: produtosPosVendas
-}))
+// console.log(JSON.stringify({
+//     ProdutosIniciais: produtosIniciais,
+//     VendasIniciais: vendasIniciais,
+//     ProdutosPosteriormenteCadastrados: produtosCadastrados,
+//     QuantidadePosteriormenteCadastrados: produtosCadastrados.length,
+//     VendasRealizadas: vendasRealizadas,
+//     QuantidadeDeVendasRealizadas: vendasRealizadas.length,
+//     ProdutosPosVendas: produtosPosVendas
+// }))
 
+
+console.log(nossoDb.buscarQuantidadeDeProdutos())
