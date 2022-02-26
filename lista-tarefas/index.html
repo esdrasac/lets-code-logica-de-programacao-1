@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de tarefas</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./assets/libs/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="row">
+          <div class="col-9">
+            <h1 class="titulos">Meu dia</h1>
+            <h2 class="titulos" id="hora-atual"></h2>
+            <h3 class="titulos" id="data-atual"></h3>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-flat">
+              <span class="material-icons add-button">add</span>
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div id="lista-tarefas" class="row"></div>
+
+    <script src="./assets/js/database.js"></script>
+    <script src="./assets/js/tarefa.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/libs/js/bootstrap.js"></script>
+  </body>
+</html>
