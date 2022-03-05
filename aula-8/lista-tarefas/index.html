@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de tarefas</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./assets/libs/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="row">
+          <div class="col-9">
+            <h1 class="titulos">Meu dia</h1>
+            <h2 class="titulos" id="hora-atual"></h2>
+            <h3 class="titulos" id="data-atual"></h3>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-flat" onclick="abrirModal()">
+              <span class="material-icons add-button">add</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div id="lista-tarefas" class="row"></div>
+
+      <div class="modal fade" id="modal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <header class="modal-header">
+              <h2 id="modal-titulo">Nova tarefa</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </header>
+            <div class="modal-body">
+              <form id="form">
+                <input type="hidden" name="id" id="id" />
+                <div class="mb-3">
+                  <label for="titulo">Título</label>
+                  <input
+                    type="text"
+                    id="titulo"
+                    name="titulo"
+                    class="form-control"
+                    placeholder="Insira o título"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="categoria">Categoria</label>
+                  <input
+                    type="text"
+                    id="categoria"
+                    name="categoria"
+                    class="form-control"
+                    placeholder="Insira a categoria"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="hora">Hora</label>
+                  <input
+                    type="time"
+                    id="hora"
+                    name="hora"
+                    class="form-control"
+                    placeholder="Insira a hora"
+                    required
+                  />
+                </div>
+                <footer class="modal-footer">
+                  <button
+                    id="salvar"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                    onclick="alterarTarefa()"
+                  >
+                    Salvar
+                  </button>
+                  <button
+                    id="cancelar"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                    aria-label="close"
+                  >
+                    Cancelar
+                  </button>
+                </footer>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/database.js"></script>
+    <script src="./assets/js/tarefa.js"></script>
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/libs/js/bootstrap.js"></script>
+  </body>
+</html>
